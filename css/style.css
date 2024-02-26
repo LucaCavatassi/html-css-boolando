@@ -69,7 +69,6 @@ ul{
     font-size: 0.8rem;
 }
 /* UTILITIES */
-
 /* layout */
 .flex{
     display: flex;
@@ -80,6 +79,10 @@ ul{
 
 .y-align{
     align-items: center;
+}
+
+.p-20{
+    padding: 20px 10px 10px;
 }
 /* colors */
 :root{
@@ -116,7 +119,6 @@ ul{
 }
 
 /* IMGS */
-
 .imghover{
     position: absolute;
     display: none;
@@ -138,7 +140,6 @@ ul{
 }
 
 /* HOVER FUNCTIONS */
-
 .card:hover .imghover{
     display: inline-block;
 }
@@ -181,3 +182,21 @@ header{
 .myaccount span{
     margin: 10px;
 }
+
+/* FOOTER */
+.legal{
+    font-size: 0.5rem;
+    padding: 10px 0;
+}
+
+.right-ft li{
+    margin-right: 5px;
+} 
+.right-ft h6{
+    font-size: 0.65rem;
+}
+
+.socials{
+    padding: 5px 0;
+}
+
