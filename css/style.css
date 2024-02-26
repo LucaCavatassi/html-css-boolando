@@ -4,15 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 img{
     max-width: 100%;
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-
 a{
     text-decoration: none;
     cursor: pointer;
@@ -23,16 +20,15 @@ a{
     width: 80%;
     margin: 0 auto;
     flex-wrap: wrap;
+
     /* debug */
     background-color: aquamarine;
-    
 }
 
 .item{
     width: calc(100% / 3 - 20px);
-    margin: 10px;
+    margin: 20px 10px;
 }
-
 .card{
     position: relative;
     /* debug */
@@ -55,8 +51,8 @@ a{
     right: 0;
     top: 10px;
     background-color: white;
-    font-size: 1.8rem;
-    padding: 2px 10px;
+    font-size: 1.4rem;
+    padding: 5px 10px;
 }
 
 .item-info a{
@@ -71,17 +67,17 @@ a{
 }
 /* UTILITIES */
 
-:root{
-    --red: #FF0000;
-    --green: #008000;
-    --orange: #FF6900;
-}
 /* layout */
 .flex{
     display: flex;
 }
 
 /* colors */
+:root{
+    --red: #FF0000;
+    --green: #008000;
+    --orange: #FF6900;
+}
 
 .bggreen{
     background-color: var(--green);
@@ -107,7 +103,7 @@ a{
     text-decoration: line-through;
 }
 
-/* HOVER FUNCTIONS */
+/* IMGS */
 
 .imghover{
     position: absolute;
@@ -121,6 +117,27 @@ a{
     position: relative;
 }
 
+/* ADD WHISHLIST */
+.hearthover{
+    display: none;
+}
+.heartnormalnormal{
+    position: relative;
+}
+
+/* HOVER FUNCTIONS */
+
 .card:hover .imghover{
     display: inline-block;
+}
+
+.whishlist:hover .hearthover{
+    display: inline-block;
+}
+.whishlist:hover .heartnormal{
+    display: none;
+}
+
+.whishlist:hover{
+    cursor: pointer;
 }
