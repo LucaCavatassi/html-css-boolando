@@ -55,9 +55,9 @@ ul{
     position: absolute;
     right: 0;
     top: 10px;
-    background-color: white;
     font-size: 1.4rem;
     padding: 5px 10px;
+    display: none;
 }
 
 .item-info{
@@ -162,7 +162,9 @@ ul{
 .card:hover{
     box-shadow: 0px 0px 4px 2px var(--orange);
 }
-
+.card:hover .whishlist{
+    display: inline-block;
+}
 
 /* HEADER */
 header{
