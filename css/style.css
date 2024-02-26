@@ -7,6 +7,7 @@
 img{
     max-width: 100%;
     max-height: 100%;
+    display: block;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +28,7 @@ ul{
 }
 /* COMMON */
 .container{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -59,6 +60,9 @@ ul{
     padding: 5px 10px;
 }
 
+.item-info{
+    margin-top: 5px;
+}
 .item-info a{
     font-size: 0.8rem;
 }
@@ -155,9 +159,14 @@ ul{
     cursor: pointer;
 }
 
+.card:hover{
+    box-shadow: 0px 0px 4px 2px var(--orange);
+}
+
+
 /* HEADER */
 header{
-    height: 60px;
+    height: 50px;
     min-width: 550px;
     position: fixed;
     width: 100%;
