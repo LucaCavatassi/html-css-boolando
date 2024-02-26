@@ -5,3 +5,122 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* COMMON */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* debug */
+    background-color: aquamarine;
+    
+}
+
+.item{
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+}
+
+.card{
+    position: relative;
+    /* debug */
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.popover{
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+.popover span{
+    padding: 5px 10px;
+    font-size: 0.7rem;
+}
+
+.whishlist{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: white;
+    font-size: 1.8rem;
+    padding: 2px 10px;
+}
+
+.item-info a{
+    font-size: 0.8rem;
+    color: inherit;
+}
+.item-info h3{
+    font-size: 0.9rem;
+}
+.item-info span{
+    font-size: 0.8rem;
+}
+/* UTILITIES */
+
+:root{
+    --red: #FF0000;
+    --green: #008000;
+    --orange: #FF6900;
+}
+/* layout */
+.flex{
+    display: flex;
+}
+
+/* colors */
+
+.bggreen{
+    background-color: var(--green);
+}
+.bgred{
+    background-color: var(--red);
+}
+.bgorange{
+    background-color: var(--orange);
+}
+
+.whitetext{
+    color: white;
+}
+
+.newprice{
+    color: var(--red);
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.oldprice{
+    text-decoration: line-through;
+}
+
+/* HOVER FUNCTIONS */
+
+.imghover{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.imgnormal{
+    position: relative;
+}
+
+.card:hover .imghover{
+    display: inline-block;
+}
